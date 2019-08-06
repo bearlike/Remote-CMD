@@ -121,3 +121,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.xml___jb_tmp___

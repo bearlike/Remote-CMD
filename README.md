@@ -24,7 +24,8 @@ python3 server.py
 For Client, use **client.py** (For security reasons, no more than one client can be connected to a remote) 
 
 ```bash
-python3 client.py
+python3 client.py <IPv4 Address of the server> <client preferred name>
+
 ```
 
 

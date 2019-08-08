@@ -124,3 +124,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *.xml___jb_tmp___
+
+# Test Files
+test.cmd
+

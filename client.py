@@ -21,8 +21,8 @@ def main(server_host,name):
    print('Enter [quit] to exit.')
    while True:
       message = soc.recv(1024)
-      message = message.decode()
-      if(message != "ACK"):
+      message = message.decode().strip()
+      if(message.upper() != "ACK") and (message != ""):
          print(server_name, ">", message)
       message = input(str("Me > "))
       if message == "[quit]":
@@ -33,6 +33,8 @@ def main(server_host,name):
          os.system("cls")
          print("Enter [quit] to exit.\n")
       soc.send(message.encode())
+      if(message == "[kill server]"):
+         exit(-1)
 
 
 # Prints usage/help
@@ -60,4 +62,10 @@ if __name__=="__main__":
    except socket.error:
       print("Invalid IP Address or Connection terminated")
       usageHelp()
-   main(server_host,name)
+   try:
+      main(server_host,name)
+   except ConnectionAbortedError:
+      print("\nConnection Aborted: An established connection was aborted by the host machine. Maybe caused due to Server-side Exceptions")
+   except ConnectionRefusedError:
+      print("\nConnection Refused: No connection could be made because the target machine actively refused it")
+      print("Recheck the IP address entered, check if the Server is online, allowed through firewall and Try again")

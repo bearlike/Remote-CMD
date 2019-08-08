@@ -32,7 +32,7 @@ python3 client.py <IPv4 Address of the server> <client preferred name>
 
 | Host Machine (Server-side)   | Client Machine |
 | ------------- | ----------- |
-| <img src="docs/img/server_test_run.png"> | <img src="docs/img/client_test_run.png"> |
+| <img src="docs/server_test_run.png"> | <img src="docs/client_test_run.png"> |
 
 
 ## Authors

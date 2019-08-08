@@ -12,24 +12,36 @@
 </p>
 
 
-With Remote-CMD, you can establish a Terminal session to a computer from another computer that's connected to the same network or to the Internet. 
+With Remote-CMD, you can establish a Terminal session to a computer from another computer that's connected to the same network or to the Internet.
 
-## Usage 
+## Usage
 On host, run **server.py**
 
 ```bash
 python3 server.py
 ```
 
-For Client, use **client.py** (For security reasons, no more than one client can be connected to a remote) 
+For Client, use **client.py** (For security reasons, no more than one client can be connected to a remote)
 
 ```bash
 python3 client.py <IPv4 Address of the server> <client preferred name>
 
 ```
 
+## Screenshots
+
+| Host Machine (Server-side)   | Client Machine |
+| ------------- | ----------- |
+| <img src="docs/img/server_test_run.png"> | <img src="docs/img/client_test_run.png"> |
 
 
+## Authors
+* **Krishna Alagiri** - [K-Kraken](https://github.com/K-Kraken/)
+
+
+## Acknowledgments
+* Hat tip to anyone whose code was used.
+* Myself :P
 
 <br><br>
 <p align="center">
@@ -37,4 +49,3 @@ python3 client.py <IPv4 Address of the server> <client preferred name>
 </p>
 
 ![wave](http://cdn.thekrishna.in/img/common/border.png)
-

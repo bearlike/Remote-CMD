@@ -35,6 +35,13 @@ python3 client.py <IPv4 Address of the server> <client preferred name>
 | <img src="docs/server_test_run.PNG"> | <img src="docs/client_test_run.PNG"> |
 
 
+## License
+The **Remote-CMD** is licensed under the terms of the [MIT license](LICENSE) and is available for free.
+
+## Links
+-   [Issue tracker](https://github.com/K-Kraken/Remote-CMD/issues)
+-   [Source code](https://github.com/K-Kraken/Remote-CMD)
+
 ## Authors
 * **Krishna Alagiri** - [K-Kraken](https://github.com/K-Kraken/)
 

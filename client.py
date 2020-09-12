@@ -1,14 +1,20 @@
-import time, socket, sys, os, getopt
+#!/usr/bin/env python3
+import time
+import socket
+import sys
+import os
+import getopt
 
-def main(server_host,name):
+
+def main(server_host, name):
    os.system("cls")
    print('Client Server...')
    time.sleep(1)
-   #Get the hostname, IP Address from socket and set Port
+   # Get the hostname, IP Address from socket and set Port
    soc = socket.socket()
    shost = socket.gethostname()
    ip = socket.gethostbyname(shost)
-   #get information to connect with the server
+   # get information to connect with the server
    print(shost, '({})'.format(ip))
    port = 1234
    print('Trying to connect to the server: {}, ({})'.format(server_host, port))
@@ -48,11 +54,12 @@ def usageHelp():
       ENDC = '\033[0m'
       BOLD = '\033[1m'
       UNDERLINE = '\033[4m'
-   print("Usage:\n  client.py ","<IPv4 Address of the server> <client preferred name>")
+   print("Usage:\n  client.py ",
+         "<IPv4 Address of the server> <client preferred name>")
    sys.exit(2)
 
-
-if __name__=="__main__":
+      
+if __name__ == "__main__":
    try:
       server_host, name = sys.argv[1:]
    except:
@@ -63,7 +70,7 @@ if __name__=="__main__":
       print("Invalid IP Address or Connection terminated")
       usageHelp()
    try:
-      main(server_host,name)
+      main(server_host, name)
    except ConnectionAbortedError:
       print("\nConnection Aborted: An established connection was aborted by the host machine. Maybe caused due to Server-side Exceptions")
    except ConnectionRefusedError:

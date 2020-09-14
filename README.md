@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Lang-Python3-lightgrey.svg"></a>
-  <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/K-Kraken/Remote-CMD.svg?color=blue"></a>
+  <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/bearlike/Remote-CMD.svg?color=blue"></a>
 </p>
 
 
@@ -39,11 +39,11 @@ python3 client.py <IPv4 Address of the server> <client preferred name>
 The **Remote-CMD** is licensed under the terms of the [MIT license](LICENSE) and is available for free.
 
 ## Links
--   [Issue tracker](https://github.com/K-Kraken/Remote-CMD/issues)
--   [Source code](https://github.com/K-Kraken/Remote-CMD)
+-   [Issue tracker](https://github.com/bearlike/Remote-CMD/issues)
+-   [Source code](https://github.com/bearlike/Remote-CMD)
 
 ## Authors
-* **Krishna Alagiri** - [K-Kraken](https://github.com/K-Kraken/)
+* **Krishna Alagiri** - [bearlike](https://github.com/bearlike/)
 
 
 ## Acknowledgments
@@ -52,7 +52,7 @@ The **Remote-CMD** is licensed under the terms of the [MIT license](LICENSE) and
 
 <br><br>
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/K-Kraken">Krishna Alagiri</a>
+  Made with ❤️ by <a href="https://github.com/bearlike">Krishna Alagiri</a>
 </p>
 
 ![wave](http://cdn.thekrishna.in/img/common/border.png)
